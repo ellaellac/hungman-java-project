@@ -63,7 +63,7 @@ public class Input {
                 } else if (Character.isDigit(userInput.charAt(0))){
                         System.out.println("Please input a letter.");
                 } else if (guessedLetter.contains(userInput)){
-                        System.out.println("You entered the same letter. Please enter again");
+                        System.out.println("You entered the same letter. Please enter again.");
                 } else {
                         setUserInput(userInput.charAt(0));
                         guessedLetter.add(userInput);
@@ -90,7 +90,5 @@ public class Input {
                 }
 
         }
-
-
 
 }

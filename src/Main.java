@@ -8,10 +8,8 @@ public class Main {
         Input input = new Input();
 
         String oneWord = word.getRandomWord();
-
         display.setOneWord(oneWord);
         input.setOneWord(oneWord);
-        System.out.println(display.getOneWord());
 
         display.guessWord(oneWord);
 
@@ -32,11 +30,4 @@ public class Main {
 
     }
 
-    //1. create a word list
-    //2. Function --> random select the word
-    //3. length of words --> show "_ _ _"
-    //4. get User Input (Scanner)
-    //5. userInput
-    //6. for loop the letters in userInput
-    //7. control flow : lose life || displayed the matched letter && store the matched input Letter && lives left
 }
