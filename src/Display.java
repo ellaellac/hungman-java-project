@@ -1,23 +1,13 @@
 public class Display {
-                private String oneWord;
 
-                public String getOneWord() {
-                     return oneWord;
-                 }
+    //Method
 
-                 public void setOneWord(String oneWord) {
-                     this.oneWord = oneWord;
-                 }
+    public void guessWord() {
+        int wordLength = Words.getRandomWord().length();
+        String underline = "_ ";
+        String hideWord = underline.repeat(wordLength);
 
-                 //Method
-
-                public void guessWord(String oneWord){
-                    int wordLength = oneWord.length();
-                    String underline = "_ ";
-                    String hideWord = underline.repeat(wordLength);
-
-                    System.out.println("Guess a word : " + hideWord + "(" + wordLength + ")");
-                }
-
+        System.out.println("Guess a word : " + hideWord + "(" + wordLength + ")");
+    }
 
 }
